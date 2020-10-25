@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/dev_db
+    username: postgres
+    password: admin
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+---
+spring:
+  profiles: 'prod'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/prod_db
+    username: postgres
+    password: admin
+---
+spring:
+  profiles: 'dev_orcl'
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: intellect_a_test
+    password: intellect_a_test

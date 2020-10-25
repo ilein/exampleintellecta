@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="dev_db@localhost" uuid="90d53509-748e-4d0b-be8f-dbf4e92da9c1">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/dev_db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="prod_db@localhost" uuid="e418e86f-1042-4956-84c6-29552a474889">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/prod_db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="orcl" uuid="b4f36d63-c643-4cef-bc9e-1e4440148411">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@localhost:1521:orcl</jdbc-url>
+    </data-source>
+  </component>
+</project>
