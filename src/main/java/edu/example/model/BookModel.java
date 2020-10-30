@@ -21,6 +21,14 @@ public class BookModel {
     @SequenceGenerator(name = "t_book_id_seq", sequenceName = "t_book_id_seq", allocationSize = 1)
     private long id;
 
+    public BookModel(long id, String name, Integer pagesCount, Integer publishYear, AuthorModel authorId) {
+        this.id = id;
+        this.name = name;
+        this.pagesCount = pagesCount;
+        this.publishYear = publishYear;
+        this.authorId = authorId;
+    }
+
     @Column(name = "name")
     private String name;
 

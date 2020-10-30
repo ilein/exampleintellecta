@@ -1,7 +1,8 @@
-package edu.example.repository.jpa;
+package edu.example.repository.jpa.repository;
 
 import edu.example.model.AuthorModel;
 import edu.example.repository.AuthorRepository;
+import edu.example.repository.jpa.config.TestConfig;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
