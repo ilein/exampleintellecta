@@ -1,5 +1,7 @@
 package edu.example.service.impl;
 
+import edu.example.annotation.Loggable;
+import edu.example.annotation.LoggableReturning;
 import edu.example.exceptions.EntityAlreadyExistsException;
 import edu.example.exceptions.EntityIllegalArgumentException;
 import edu.example.exceptions.EntityNotFoundException;
@@ -27,10 +29,13 @@ public class DefaultBookService implements BookService {
         this.authorRepository = authorRepository;
     }
 
+    @Loggable
     public List<BookModel> findAll() {
         return bookRepository.findAll();
     }
 
+    @Loggable
+    @LoggableReturning
     public BookModel findById(Object id) {
         if (id == null) {
             throw new EntityIllegalArgumentException("Идентификатор объекта не может быть null");
@@ -51,6 +56,8 @@ public class DefaultBookService implements BookService {
         return book.get();
     }
 
+    @Loggable
+    @LoggableReturning
     public BookModel create(BookModel bookModel) {
         if (bookModel == null) {
             throw new EntityIllegalArgumentException("Создаваемый объект не может быть null");

@@ -1,5 +1,6 @@
 package edu.example.service;
 
+import edu.example.annotation.Loggable;
 import edu.example.model.AuthorModel;
 
 import java.util.List;

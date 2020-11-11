@@ -1,9 +1,6 @@
 package edu.example.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -14,6 +11,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class AuthorModel {
 
     public static String TYPE_NAME = "Автор";
@@ -75,5 +73,7 @@ public class AuthorModel {
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
+
+
 
 }
